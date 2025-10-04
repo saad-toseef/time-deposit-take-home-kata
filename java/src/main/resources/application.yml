@@ -1,0 +1,17 @@
+spring:
+  datasource:
+
+    url: jdbc:postgresql://localhost:5432/time_deposit-kata
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none #so use provided sql files
+    show-sql: false
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+server:
+  port: 8080
