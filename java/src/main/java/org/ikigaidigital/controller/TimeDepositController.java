@@ -22,4 +22,8 @@ public class TimeDepositController {
         return service.getAllDeposits();
     }
 
+    @PostMapping("/update-balances")
+    public List<TimeDepositDTO> updateBalances() {
+        return service.updateAllBalancesDTO();
+    }
 }

@@ -29,6 +29,20 @@ public class TimeDepositService {
                 .collect(Collectors.toList());
     }
 
+
+    @Transactional
+    public List<TimeDepositDTO> updateAllBalancesDTO() {
+
+        // Find Calculate
+        List<TimeDeposit> deposits = repo.findAll();
+        calculator.updateBalance(deposits);
+
+        List<TimeDeposit> saved = repo.saveAll(deposits);
+
+        return saved.stream().map(this::mapToDTO).toList();
+    }
+
+
     // DTO Mappging
 
     private WithdrawalDTO mapWithdrawalToDTO(Withdrawal withdrawal) {
