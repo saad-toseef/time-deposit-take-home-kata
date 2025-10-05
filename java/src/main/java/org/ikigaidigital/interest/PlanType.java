@@ -1,4 +1,4 @@
-package org.ikigaidigital.org.ikigaidigital.interest;
+package org.ikigaidigital.interest;
 
 public enum PlanType {
     STUDENT(InterestRates.STUDENT_RATE),

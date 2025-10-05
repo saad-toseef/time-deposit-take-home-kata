@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXITS time_deposits (
+CREATE TABLE IF NOT EXISTS time_deposits (
     time_deposit_id SERIAL PRIMARY KEY,
     plan_type VARCHAR(50) NOT NULL,
     days INT NOT NULL,

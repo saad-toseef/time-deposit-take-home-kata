@@ -1,6 +1,6 @@
-package org.ikigaidigital.org.ikigaidigital.interest;
+package org.ikigaidigital.interest;
 
-import org.ikigaidigital.TimeDeposit;
+import org.ikigaidigital.domain.TimeDeposit;
 
 public class PremiumPlanPolicy implements InterestPolicy {
 

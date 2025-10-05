@@ -1,4 +1,4 @@
-package org.ikigaidigital.org.ikigaidigital.interest;
+package org.ikigaidigital.interest;
 
 /**
  * Class to hold the static interest rates, maybe move them to config in the future
